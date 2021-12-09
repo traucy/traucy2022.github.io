@@ -1,0 +1,113 @@
+:root {
+    --white:#F2F2F2;
+    --lightgrey:#999999;
+    --grey:#808080;
+    --darkgrey:#696969;
+}
+/* big screen */
+@media (min-width: 451px) {
+  .navbar {
+    z-index: 1;  /* make navbar on top of everything */
+  }
+
+  .navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  	align-items: center;
+  	background: black;
+    /* opacity: 0.9; */
+  	/* border-bottom: 1px solid white; */
+
+    @extend #blurryscroll;
+    filter: none;
+
+  	display: block;
+  	transition: top 0.3s;
+    padding-left: 2em;
+    height: 2em;
+    padding-top: 0.6em;
+  }
+
+  .navbar-right {
+    float: right;
+    margin-right: 2em;
+  }
+
+  .navbar-item {
+    margin-right: 2em;
+  }
+
+  .header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    transition: top 0.3s;
+  }
+
+  .header .logo {
+    display: block;
+    float: left;
+    /* font-size: 2em; */
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+  }
+
+  div.mobile-nav {
+    display: none;
+  }
+
+  .icon-border {
+    background-color: rgba(255, 255, 255, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    /* border-style: dashed;
+    border-color: green; */
+  }
+
+}
+
+
+/* iphone X */
+@media screen and (max-width: 450px) {
+  /* html, body {
+    overflow: scroll;
+  } */
+
+  .big-logo {
+    display: none;
+  }
+
+  .icon-border {
+    background-color: rgba(255, 255, 255, 0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    /* border-style: dashed;
+    border-color: green; */
+  }
+
+  .mobile-nav {
+    display: flex;
+    box-sizing: border-box;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  div.desktop-nav {
+    display: none;
+  }
+
+}

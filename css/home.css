@@ -1,0 +1,335 @@
+
+.container {
+  display: flex;
+  height: 100%;
+  background-color: transparent;
+}
+
+.box-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  z-index: 1;
+
+  padding-left: 3em;
+  padding-bottom: 1em;
+  padding-top: 20em;
+  align-items: flex-end;
+  background-color: transparent;
+
+  /* border-style: dashed;
+  border-color: red; */
+
+  /* Hidden scroll bar */
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.box-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.card-padding {
+  margin-right: 3em;
+}
+
+/* original size and position  */
+#scale-image {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
+}
+
+#scale-image:hover {
+  transition: all 0.2s ease-out;
+  transform: scale(1.1, 1.1);
+}
+
+.image-block:hover {
+  border-radius: 2em;
+
+  /* box-shadow: 0px 5px 16px #EAEEF4;
+  border: solid darkgrey 1px; */
+}
+
+.image-block {
+  /* flex: 1 1 50em; */
+  width: 50em;
+  height: 22em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  transition: all 0.2s ease-in-out;
+
+  /* space for written text below */
+  margin-bottom: 1em;
+
+  /* border styling */
+  padding: 1em;
+  border-radius: 1.3em;
+  border: solid #EAEEF4 1px;
+}
+
+
+
+.image-box:hover {
+  border-radius: 3em;
+}
+
+.image-box {
+	width: 100%;
+  height: inherit;
+  border-radius: 1em;
+
+  /* make image fit in box without distortion */
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-category {
+  border-radius: 2em;
+  border: 1px solid;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-color: #EAEEF4;
+}
+
+/* iphone X */
+@media screen and (max-width: 450px) {
+  .container {
+    display: flex;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  .box-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    z-index: 1;
+
+    padding-left: 1.4em;
+    padding-bottom: 2em;
+    padding-top: 1.4em;
+    align-items: flex-end;
+    background-color: transparent;
+
+    /* border-style: dashed;
+    border-color: red; */
+
+    /* Hidden scroll bar */
+    /* Firefox */
+    scrollbar-width: none;
+    /* IE and Edge */
+    -ms-overflow-style: none;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .box-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+
+  .card-padding {
+    margin-right: 1.4em;
+    margin-bottom: 3em;
+
+  }
+
+
+  /* original size and position  */
+  #scale-image {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1);
+  }
+
+  #scale-image:hover {
+    transition: all 0.2s ease-out;
+    transform: scale(1.1, 1.1);
+  }
+
+  .image-block:hover {
+    border-radius: 2em;
+
+    /* box-shadow: 0px 5px 16px #EAEEF4;
+    border: solid darkgrey 1px; */
+  }
+
+  .image-block {
+    /* flex: 1 1 50em; */
+    width: 18em;
+    height: 18em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    transition: all 0.2s ease-in-out;
+
+    /* space for written text below */
+    margin-bottom: 1em;
+
+    /* border styling */
+    padding: 1em;
+    border-radius: 1.3em;
+    border: solid #EAEEF4 1px;
+  }
+
+
+
+  .image-box:hover {
+    border-radius: 3em;
+  }
+
+  .image-box {
+  	width: 100%;
+    height: inherit;
+    border-radius: 1em;
+
+    /* make image fit in box without distortion */
+  	overflow: hidden;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card-category {
+    /* border-radius: 2em;
+    border: 1px solid;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-color: #EAEEF4; */
+    display: none;
+  }
+}
+
+/* iphone 5/SE */
+@media screen and (max-width: 360px) {
+  .container {
+    display: flex;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  .box-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    z-index: 1;
+
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    align-items: flex-end;
+    background-color: transparent;
+
+    /* border-style: dashed;
+    border-color: red; */
+
+    /* Hidden scroll bar */
+    /* Firefox */
+    scrollbar-width: none;
+    /* IE and Edge */
+    -ms-overflow-style: none;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .box-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+
+  .card-padding {
+    margin-right: 1em;
+  }
+
+  /* original size and position  */
+  #scale-image {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1);
+  }
+
+  #scale-image:hover {
+    transition: all 0.2s ease-out;
+    transform: scale(1.1, 1.1);
+  }
+
+  .image-block:hover {
+    border-radius: 2em;
+
+    /* box-shadow: 0px 5px 16px #EAEEF4;
+    border: solid darkgrey 1px; */
+  }
+
+  .image-block {
+    /* flex: 1 1 50em; */
+    width: 14em;
+    height: 14em;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    transition: all 0.2s ease-in-out;
+
+    /* space for written text below */
+    margin-bottom: 0.5em;
+
+    /* border styling */
+    padding: 0.5em;
+    border-radius: 1.3em;
+    border: solid #EAEEF4 1px;
+  }
+
+
+
+  .image-box:hover {
+    border-radius: 3em;
+  }
+
+  .image-box {
+  	width: 100%;
+    height: inherit;
+    border-radius: 1em;
+
+    /* make image fit in box without distortion */
+  	overflow: hidden;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card-category {
+    /* border-radius: 2em;
+    border: 1px solid;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-color: #EAEEF4; */
+    display: none;
+  }
+}

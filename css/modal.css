@@ -1,0 +1,177 @@
+#myBtn {
+  letter-spacing: 0.04em;
+  line-height: 1.5em;
+  text-decoration: none;
+
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--darkgrey);
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+  z-index: 7; /* Sit on top */
+}
+
+
+/* big */
+@media screen and (min-width: 451px) {
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 7; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+
+
+    /* Enable scroll if needed */
+    /* overflow: auto; */
+
+    /* Fallback color */
+    background-color: rgba(255, 255, 255);
+
+    /* White w/ opacity + blur */
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1em 20em 1em 20em;
+    height: 90%;
+
+    /* Enable scroll if needed */
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border-style: dashed;
+    border-color: red; */
+  }
+
+  .modal-text-padding {
+    background-color: rgba(255, 255, 255, 0);
+    padding-bottom: 1em;
+    /* max-width: 40em; */
+  }
+
+  /* The Close Button */
+  .close {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    padding: 2em 2em 5em 2em;
+    box-sizing: border-box;
+
+    /* border-style: dashed;
+    border-color: green; */
+  }
+
+  .close:hover,
+  .close:focus {
+    background-color: rgba(255, 255, 255, 0);
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}
+
+
+/* iphone X */
+@media screen and (max-width: 450px) {
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 7; /* Sit on top */
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    flex-direction: column;
+    justify-content: center;
+
+    /* Enable scroll if needed */
+    /* overflow: auto; */
+
+    /* Fallback color */
+    background-color: rgba(255, 255, 255);
+
+    /* White w/ opacity + blur */
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 2em 24px 24px 24px;
+
+    width: 100%;
+    height: 90%;
+
+    /* Enable scroll if needed */
+    overflow: auto;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+
+    /* border-style: dashed;
+    border-color: red; */
+  }
+
+  .modal-text-padding {
+    background-color: rgba(255, 255, 255, 0);
+    padding-bottom: 1em;
+  }
+
+  /* The Close Button */
+  .close {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    padding: 16px 16px 16px 16px;
+    box-sizing: border-box;
+
+    /* border-style: dashed;
+    border-color: green; */
+  }
+
+  .close:hover,
+  .close:focus {
+    background-color: rgba(255, 255, 255, 0);
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+}

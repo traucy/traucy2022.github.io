@@ -1,0 +1,398 @@
+/* big screen */
+@media (min-width: 450px) {
+  /* ____________________________ DETAILS ____________________________ */
+  .overview-container {
+    flex: 1 1 10em;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 3px dashed green; */
+  }
+
+  .art-container {
+    flex: 1 1 10em;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 3px dashed green; */
+  }
+
+  .title-block {
+    flex: 1 1 10em;
+    padding-left: 3em;
+    padding-bottom: 4em;
+  }
+
+
+  .details-container {
+    /* flex: 1 1 50em; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    /* border: solid red 1px; */
+  }
+
+  .details-block {
+    /* flex: 1 1 15em; */
+    margin-right: 5em;
+    padding-bottom: 1.5em;
+  }
+
+  /* image width  */
+  .full-width {
+  	left: 50%;
+  	margin-left: -50vw;
+  	margin-right: -50vw;
+  	max-width: 100vw;
+  	position: relative;
+  	right: 50%;
+  	width: 100vw;
+  }
+
+
+  /* ____________________________ CASE STUDY ____________________________ */
+
+  .written {
+    /* margin-left: 22em;
+    margin-right: 22em; */
+    padding: 6em 25em 0em 25em;
+  }
+
+
+
+  .content-container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    padding: 4em 10em 4em 10em;
+    /* border: 2px dashed blue; */
+  }
+
+  .col-1of2 {
+    flex: 1 1 10em;
+    /* border: 2px dashed red; */
+  }
+
+  .col-2of2 {
+    flex: 1 1 10em;
+    /* border: 2px dashed green; */
+  }
+
+  .art-margin {
+    padding-right: 3em;
+  }
+
+
+  /* ____________________________ IMAGES ____________________________ */
+
+  .img-side-margin {
+    padding: 6em 6em 6em 6em;
+  }
+
+  .col-image-block {
+    flex: 1 1 40em;
+    height: 40vw;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .image-box {
+  	width: 100%;
+    height: inherit;
+
+  	overflow: hidden;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+    /* border: dashed blue 1px; */
+  }
+
+  .col-art-block {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+
+
+/* ipad */
+@media screen and (max-width: 1200px) {
+  /* ____________________________ DETAILS ____________________________ */
+  .overview-container {
+    flex: 1 1 10em;
+    display: wrap;
+    display: none;
+    /* border: 3px dashed green; */
+  }
+
+  .art-container {
+    flex: 1 1 10em;
+    display: wrap;
+    /* border: 3px dashed green; */
+  }
+
+  .title-block {
+    flex: 1 1 10em;
+    padding: 24px;
+    /* padding-bottom: 4em; */
+  }
+
+  .details-container {
+    flex: 1 1 35em;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    margin: 1em 1.5em 0em 1.5em;
+    align-content: space-around;
+  }
+
+  .details-block {
+    /* flex: 1 1 15em; */
+    padding-bottom: 1.5em;
+  }
+  .contribution-block {
+    flex: 1 1 15em;
+    margin-right: 0em;
+    padding-bottom: 1.5em;
+  }
+
+  .tools-block {
+    flex: 1 1 15em;
+    margin-right: 0em;
+    padding-bottom: 1.5em;
+  }
+
+  .team-block {
+    flex: 1 1 15em;
+    margin-right: 0em;
+    padding-bottom: 1.5em;
+  }
+
+  .date-block {
+    flex: 1 1 15em;
+    margin-right: 0em;
+    padding-bottom: 1.5em;
+  }
+
+  /* image width  */
+  .full-width {
+  	left: 50%;
+  	margin-left: -50vw;
+  	margin-right: -50vw;
+  	max-width: 100vw;
+  	position: relative;
+  	right: 50%;
+  	width: 100vw;
+  }
+
+
+  /* ____________________________ CASE STUDY ____________________________ */
+
+  .written {
+    /* margin-left: 22em;
+    margin-right: 22em; */
+    padding: 4em 12em 0em 12em;
+  }
+
+  .content-container {
+    flex: 1 1 auto;
+    display: column;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 3em 24px 3em 24px;
+    /* border: 2px dashed blue; */
+  }
+
+  .col-1of2 {
+    flex: 1 1 10em;
+    /* border: 2px dashed red; */
+    padding-bottom: 2em;
+  }
+
+  .col-2of2 {
+    flex: 1 1 10em;
+    /* border: 2px dashed green; */
+  }
+
+  .art-margin {
+    padding-right: 0em;
+  }
+
+
+  /* ____________________________ IMAGES ____________________________ */
+
+  .img-side-margin {
+    padding: 1em 24px 4em 24px;
+  }
+
+  .col-image-block {
+    flex: 1 1 40em;
+    height: 45vw;
+
+    display: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .image-box {
+  	width: 100%;
+    height: inherit;
+
+  	overflow: hidden;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+    /* border: dashed blue 1px; */
+  }
+
+  .col-art-block {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .art-margin {
+    padding: 0px 24px 24px 24px;
+  }
+}
+
+
+
+/* iphone X */
+@media screen and (max-width: 450px) {
+  /* ____________________________ DETAILS ____________________________ */
+  .overview-container {
+    flex: 1 1 10em;
+    display: wrap;
+    display: none;
+    /* border: 3px dashed green; */
+  }
+
+  .art-container {
+    flex: 1 1 10em;
+    display: wrap;
+    /* border: 3px dashed green; */
+  }
+
+  .title-block {
+    flex: 1 1 10em;
+    padding: 24px;
+    /* padding-bottom: 4em; */
+  }
+
+  .details-container {
+    flex: 1 1 35em;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    margin: 1em 1.5em 0em 1.5em;
+    align-content: space-around;
+  }
+
+  .details-block {
+    /* flex: 1 1 15em; */
+    padding-bottom: 1.5em;
+  }
+  .contribution-block {
+    flex: 1 1 15em;
+    margin-right: 0em;
+    padding-bottom: 1.5em;
+  }
+
+  .tools-block {
+    flex: 1 1 15em;
+    margin-right: 0em;
+    padding-bottom: 1.5em;
+  }
+
+  .team-block {
+    flex: 1 1 15em;
+    margin-right: 0em;
+    padding-bottom: 1.5em;
+  }
+
+  .date-block {
+    flex: 1 1 15em;
+    margin-right: 0em;
+    padding-bottom: 1.5em;
+  }
+
+  /* image width  */
+  .full-width {
+  	left: 50%;
+  	margin-left: -50vw;
+  	margin-right: -50vw;
+  	max-width: 100vw;
+  	position: relative;
+  	right: 50%;
+  	width: 100vw;
+  }
+
+
+  /* ____________________________ CASE STUDY ____________________________ */
+
+  .written {
+    /* margin-left: 22em;
+    margin-right: 22em; */
+    padding: 2em 24px 2em 24px;
+  }
+
+  .content-container {
+    flex: 1 1 auto;
+    display: column;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 3em 24px 3em 24px;
+    /* border: 2px dashed blue; */
+  }
+
+  .col-1of2 {
+    flex: 1 1 10em;
+    /* border: 2px dashed red; */
+    padding-bottom: 2em;
+  }
+
+  .col-2of2 {
+    flex: 1 1 10em;
+    /* border: 2px dashed green; */
+  }
+
+  .art-margin {
+    padding-right: 0em;
+  }
+
+
+  /* ____________________________ IMAGES ____________________________ */
+
+  .img-side-margin {
+    padding: 1em 24px 4em 24px;
+  }
+
+  .col-image-block {
+    flex: 1 1 40em;
+    height: 90vw;
+
+    display: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .image-box {
+  	width: 100%;
+    height: inherit;
+
+  	overflow: hidden;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+    /* border: dashed blue 1px; */
+  }
+
+  .col-art-block {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .art-margin {
+    padding: 0px 24px 24px 24px;
+  }
+}

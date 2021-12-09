@@ -1,0 +1,498 @@
+* {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+
+}
+
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+::-moz-selection { background: #FEE5FF; }
+::selection { background: #FEE5FF; }
+
+@import url("https://use.typekit.net/cdk1utk.css");
+
+:root {
+    --white:#F2F2F2;
+    --lightgrey:#999999;
+    --darkgrey:#44444F;
+    --black:#2f2f38;
+}
+
+.daybreak-color:hover {
+  color: #f25410;
+}
+
+.sfu-color:hover {
+  color: #982932;
+}
+
+.red-color:hover {
+  color: #C30081;
+}
+
+.grey-bg {
+  background-color: #F9F9FA;
+}
+
+
+
+a {
+  letter-spacing: 0.04em;
+  color: var(--black);
+  text-decoration: none;
+  font-family: neue-haas-grotesk-display, sans-serif;
+
+
+  font-style: normal;
+  font-size: 0.95em;
+}
+
+a:link {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+
+  /* color: var(--darkgrey); */
+}
+
+a:hover {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  /* color: #8F9699; */
+}
+
+a:visited {
+}
+
+a:active {
+}
+
+.underline {
+  border-bottom: solid black 1px;
+}
+
+
+.underline-2 {
+  border-bottom: solid white 1px;
+}
+
+.underline-2:hover {
+  border-bottom: solid black 1px;
+}
+
+
+h1 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: 3.5em;
+  line-height: 1.5em;
+  color: var(--black);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+h2 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  overflow: hidden;
+  display: inline-block;
+
+  font-size: 2em;
+  letter-spacing: 0.04em;
+  line-height: 1.5em;
+  color: var(--darkgrey);
+  background-color: rgba(255, 255, 255, 0);
+
+}
+
+h3 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: 1.3em;
+  letter-spacing: 0.03em;
+  line-height: 1.6em;
+  color: var(--black);
+  background-color: rgba(255, 255, 255, 0);
+
+}
+
+h4 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: 0.95em;
+  letter-spacing: 0.04em;
+  line-height: 2em;
+  color: var(--darkgrey);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+h5 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 1em;
+  letter-spacing: 0.06em;
+  line-height: 1.5em;
+  color: var(--grey);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* for the list items */
+h6 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+  line-height: 1.5em;
+  color: var(--grey);
+  background-color: rgba(255, 255, 255, 0);
+
+}
+
+p {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  padding-bottom: 1em;
+
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+  line-height: 1.8em;
+  color: var(--darkgrey);
+  background-color: none;
+}
+
+
+.modalbutton {
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text-hover {
+  display:inline-block;
+  color: rgba(68, 68, 79, 0.8);
+  transition: 0.6s;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.text-hover:hover {
+  display:inline-block;
+  color: var(--darkgrey);
+  transition: 0.3s;
+  background: #FEE5FF;
+  /* background: rgba(252, 161, 255, 0.3); */
+}
+
+.text-highlight {
+  display:inline-block;
+  color: var(--darkgrey);
+  background: #FEE5FF;
+  /* background: rgba(252, 161, 255, 0.3); */
+}
+
+
+.rotate {
+  transform: rotate(-15deg);
+  position: absolute;
+  color: var(--lightgrey);
+
+  /* Border is the new background */
+  background: none;
+
+  /* Rotate from top left corner (not default) */
+  transform-origin: 0 2;
+
+  /* Safari */
+  -webkit-transform: rotate(-15deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-15deg);
+
+  /* IE */
+  -ms-transform: rotate(-15deg);
+
+  /* Opera */
+  -o-transform: rotate(-15deg);
+}
+
+.justify {
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+
+  width: auto;
+
+  /* border-style: dashed;
+  border-color: green; */
+}
+
+.half-opacity {
+  color: #AAAAAA;
+}
+
+.max-text-width {
+  max-width:40em;
+}
+
+.blue-text {
+  color: #008981;
+}
+
+.red-text {
+  color: #C30081;
+}
+
+.nav-button {
+  letter-spacing: 0.04em;
+  line-height: 1.5em;
+  text-decoration: none;
+
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--darkgrey);
+}
+
+
+
+/*  ____________________________ SPACERS ____________________________*/
+
+.smallspacer {
+  height: 1em;
+}
+
+.spacer {
+  height: 3em;
+}
+
+.bigspacer {
+  height: 6em;
+}
+
+
+
+/* iphone X */
+@media screen and (max-width: 450px) {
+  h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 2em;
+    line-height: 1.5em;
+    color: var(--black);
+  }
+
+  h2 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+    /* background-color: red;
+    display: inline-block; */
+
+    font-size: 1.5em;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+    color: var(--darkgrey);
+  }
+
+
+  h3 {
+    /* udated */
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 1.2em;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  h4 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 0.95em;
+    letter-spacing: 0.04em;
+    line-height: 3em;
+    color: var(--darkgrey);
+  }
+
+  h5 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 1em;
+    letter-spacing: 0.06em;
+    line-height: 1.5em;
+    color: var(--grey);
+  }
+
+  p {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    padding-top: 1em;
+
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    line-height: 1.8em;
+    color: var(--darkgrey);
+  }
+
+  /*  ____________________________ SPACERS ____________________________*/
+
+  .smallspacer {
+    height: 0.5em;
+  }
+
+  .spacer {
+    height: 1.5em;
+  }
+
+  .bigspacer {
+    height: 3em;
+  }
+
+  .vertical-line {
+    border-left: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+}
+
+
+/* iphone 5/SE */
+@media screen and (max-height: 568px){
+  h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: var(--black);
+  }
+
+  h2 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+    /* background-color: red;
+    display: inline-block; */
+
+    font-size: 1.5em;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+    color: var(--darkgrey);
+  }
+
+
+  h3 {
+    /* udated */
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    line-height: 1.5em;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  h4 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    font-size: 0.95em;
+    letter-spacing: 0.04em;
+    line-height: 2em;
+    color: var(--darkgrey);
+  }
+
+  h5 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 1em;
+    letter-spacing: 0.06em;
+    line-height: 1.5em;
+    color: var(--grey);
+  }
+
+  p {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    padding-top: 1em;
+
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    line-height: 1.8em;
+    color: var(--darkgrey);
+  }
+
+  /*  ____________________________ SPACERS ____________________________*/
+
+  .smallspacer {
+    height: 0.5em;
+  }
+
+  .spacer {
+    height: 1.5em;
+  }
+
+  .bigspacer {
+    height: 2em;
+  }
+
+  .vertical-line {
+    border-left: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+}

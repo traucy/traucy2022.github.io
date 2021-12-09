@@ -1,0 +1,340 @@
+
+
+
+
+
+/*  ____________________________ HEADER/ABOUT/LIST CONTENT  ____________________________*/
+.header {
+  background-color: white;
+  z-index: 1;
+  transition: top 0.3s;
+
+
+  width: 100%;
+  height: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-right: 3em;
+  padding-left: 3em;
+
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
+  box-sizing: border-box;
+
+  /* border: red solid; */
+}
+
+.main-container {
+  display: flex;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  /* makes the div not fall out the screen */
+  box-sizing: border-box;
+
+
+  padding-left: 3em;
+  padding-right: 0em;
+  padding-top: 2em;
+  padding-bottom: 0em;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0);
+
+  /* border-bottom: solid lightgrey 1px; */
+
+  /* border-style: solid;
+  border-color: blue; */
+
+}
+
+.nav-container {
+  display: flex;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  right: 0;
+
+  /* makes the div not fall out the screen */
+  box-sizing: border-box;
+
+  padding-left: 0em;
+  padding-right: 3em;
+  padding-top: 2em;
+  padding-bottom: 0em;
+  background: transparent;
+
+  /* border-style: solid;
+  border-color: pink; */
+}
+
+/* for email, resume, more about me */
+.horizontal-container {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  column-gap: 2em;
+  align-items: center;
+  /* border-style: solid;
+  border-color: purple; */
+}
+
+
+/* for the text to align at baseline */
+.one-line {
+  display: flex;
+  overflow: hidden;
+  column-gap: 0.5em;
+  align-items: baseline;
+  width: auto;
+
+  padding-bottom: 0.5em;
+
+  /* border-style: solid;
+  border-color: coral; */
+}
+
+
+
+
+/* iphone X */
+@media screen and (max-width: 450px) {
+
+  /*  ____________________________ HEADER/ABOUT/LIST CONTENT  ____________________________*/
+  .header {
+    background-color: white;
+    z-index: 1;
+    transition: top 0.3s;
+
+
+    width: 100%;
+    height: auto;
+    padding: 16px 16px 16px 16px;
+
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    box-sizing: border-box;
+
+    /* border: red solid; */
+  }
+
+  .main-container {
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    /* makes the div not fall out the screen */
+    box-sizing: border-box;
+
+
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0);
+
+    /* border-bottom: solid lightgrey 1px; */
+
+    /* border-style: solid;
+    border-color: blue; */
+
+  }
+
+  .nav-container {
+    /* display: flex;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    right: 0;
+
+    box-sizing: border-box;
+
+    padding-left: 0em;
+    padding-right: 3em;
+    padding-top: 2em;
+    padding-bottom: 0em;
+    background: transparent; */
+    display: none;
+
+  }
+
+  /* for email, resume, more about me */
+  .horizontal-container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    column-gap: 2em;
+    /* border-style: solid;
+    border-color: purple; */
+  }
+
+
+  /* for the text to align at baseline */
+  .one-line {
+    display: flex;
+    overflow: hidden;
+    column-gap: 0.5em;
+    align-items: baseline;
+    width: auto;
+
+    padding-bottom: 0.5em;
+
+    /* border-style: solid;
+    border-color: coral; */
+  }
+
+}
+
+
+
+/* iphone 5/SE */
+@media screen and (max-width: 360px) {
+
+  /*  ____________________________ HEADER/ABOUT/LIST CONTENT  ____________________________*/
+  .header {
+    background-color: white;
+    z-index: 1;
+    transition: top 0.3s;
+
+
+    width: 100%;
+    height: auto;
+    padding: 16px 24px 16px 24px;
+
+
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    box-sizing: border-box;
+
+    /* border: red solid; */
+  }
+
+  .main-container {
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    /* makes the div not fall out the screen */
+    box-sizing: border-box;
+
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0);
+
+    /* border-bottom: solid lightgrey 1px; */
+
+    /* border-style: solid;
+    border-color: blue; */
+
+  }
+
+  .nav-container {
+    /* display: flex;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    right: 0;
+
+    box-sizing: border-box;
+
+    padding-left: 0em;
+    padding-right: 3em;
+    padding-top: 2em;
+    padding-bottom: 0em;
+    background: transparent; */
+    display: none;
+
+  }
+
+  /* for email, resume, more about me */
+  .horizontal-container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    column-gap: 2em;
+    /* border-style: solid;
+    border-color: purple; */
+  }
+
+
+  /* for the text to align at baseline */
+  .one-line {
+    display: flex;
+    overflow: hidden;
+    column-gap: 0.5em;
+    align-items: baseline;
+    width: auto;
+
+    padding-bottom: 0.5em;
+
+    /* border-style: solid;
+    border-color: coral; */
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* spacer */
