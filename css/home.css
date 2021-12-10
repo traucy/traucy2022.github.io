@@ -108,7 +108,7 @@
 }
 
 /* iphone X */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .container {
     display: flex;
     height: 100%;

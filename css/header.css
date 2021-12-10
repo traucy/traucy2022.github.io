@@ -5,7 +5,7 @@
     --darkgrey:#696969;
 }
 /* big screen */
-@media (min-width: 451px) {
+@media (min-width: 551px) {
   .navbar {
     z-index: 1;  /* make navbar on top of everything */
   }
@@ -75,7 +75,7 @@
 
 
 /* iphone X */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   /* html, body {
     overflow: scroll;
   } */

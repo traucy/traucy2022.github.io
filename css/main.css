@@ -299,7 +299,7 @@ p {
 
 
 /* iphone X */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   h1 {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 500;

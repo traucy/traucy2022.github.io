@@ -19,7 +19,7 @@
 
 
 /* big */
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 551px) {
   /* The Modal (background) */
   .modal {
     display: none; /* Hidden by default */
@@ -96,7 +96,7 @@
 
 
 /* iphone X */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   /* The Modal (background) */
   .modal {
     display: none; /* Hidden by default */
