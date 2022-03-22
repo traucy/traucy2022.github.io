@@ -12,10 +12,10 @@
 
   width: 100%;
   height: auto;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  padding-right: 3em;
-  padding-left: 3em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-right: 1em;
+  padding-left: 1em;
 
   display: flex;
   overflow: hidden;
@@ -42,9 +42,9 @@
   box-sizing: border-box;
 
 
-  padding-left: 3em;
+  padding-left: 5em;
   padding-right: 0em;
-  padding-top: 2em;
+  padding-top: 4em;
   padding-bottom: 0em;
   background: transparent;
   background-color: rgba(0, 0, 0, 0);
@@ -72,8 +72,8 @@
   box-sizing: border-box;
 
   padding-left: 0em;
-  padding-right: 3em;
-  padding-top: 2em;
+  padding-right: 5em;
+  padding-top: 4em;
   padding-bottom: 0em;
   background: transparent;
 
@@ -86,8 +86,9 @@
   display: flex;
   overflow: hidden;
   flex-direction: row;
-  column-gap: 2em;
+  column-gap: 0.5em;
   align-items: center;
+  background: none;
   /* border-style: solid;
   border-color: purple; */
 }
@@ -98,7 +99,8 @@
   display: flex;
   overflow: hidden;
   column-gap: 0.5em;
-  align-items: baseline;
+  /* align-items: baseline; */
+  align-items: center;
   width: auto;
 
   padding-bottom: 0.5em;

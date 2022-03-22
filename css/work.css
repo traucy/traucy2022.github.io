@@ -85,6 +85,10 @@
 
   /* ____________________________ IMAGES ____________________________ */
 
+  .img-border {
+    border-radius: 16px;
+  }
+
   .img-side-margin {
     padding: 6em 6em 6em 6em;
   }
@@ -101,6 +105,7 @@
   .image-box {
   	width: 100%;
     height: inherit;
+    border-radius: 16px;
 
   	overflow: hidden;
   	background-size: cover;
@@ -222,6 +227,10 @@
 
   /* ____________________________ IMAGES ____________________________ */
 
+  .img-border {
+    border-radius: 12px;
+  }
+
   .img-side-margin {
     padding: 1em 24px 4em 24px;
   }
@@ -238,6 +247,7 @@
   .image-box {
   	width: 100%;
     height: inherit;
+    border-radius: 12px;
 
   	overflow: hidden;
   	background-size: cover;
@@ -363,6 +373,10 @@
 
   /* ____________________________ IMAGES ____________________________ */
 
+  .img-border {
+    border-radius: 12px;
+  }
+
   .img-side-margin {
     padding: 1em 24px 4em 24px;
   }
@@ -379,6 +393,7 @@
   .image-box {
   	width: 100%;
     height: inherit;
+    border-radius: 12px;
 
   	overflow: hidden;
   	background-size: cover;

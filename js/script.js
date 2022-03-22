@@ -28,6 +28,12 @@ div.onclick = function() {
   document.getElementById("mobileDiv").style.zIndex = "6";
 }
 
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+// }
+
 
 //hide header on scroll
 var prevScrollpos = window.pageYOffset;

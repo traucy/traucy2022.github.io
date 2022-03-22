@@ -40,7 +40,12 @@
   }
 
   .header {
-    background-color: white;
+    /* background-color: white; */
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(5px);
+    border: solid #F4F7F9 1px;
+
+
     position: fixed;
     width: 100%;
     z-index: 3;
