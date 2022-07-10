@@ -52,13 +52,13 @@
   /* ____________________________ CASE STUDY ____________________________ */
 
   .written {
-    margin-left: 25em;
+    /* margin-left: 25em;
     margin-right: 25em;
-    padding-top: 6em;
-    /* padding: 6em 25em 0em 25em; */
+    padding-top: 6em; */
+    padding: 6em 25em 0em 25em;
 
-    max-width: 36em;
-    justify-content: center;
+    /* max-width: 36em; */
+    /* justify-content: center; */
   }
 
   .max-text-width {
