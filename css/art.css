@@ -196,7 +196,7 @@ html, body {
 @media screen and (min-width: 661px) {
   footer {
     position: absolute;
-    margin: 0em 0em 1em 0em;
+    margin: 0em 0em 1.5em 0em;
     padding: 0;
     overflow: hidden;
     position: fixed;
@@ -251,6 +251,7 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     /* border-style: solid;
     border-color: red; */
   }
