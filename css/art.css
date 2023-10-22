@@ -131,7 +131,7 @@ html, body {
   .nav-art-item-left {
     padding: 10px 24px 10px 24px;
     overflow: hidden;
-    margin: 0px;
+    margin: 1px;
     border-style: solid;
     border-width: 0.5px;
     border-color: var(--bordercolor);
@@ -174,7 +174,7 @@ html, body {
   .nav-art-item-right2 {
     padding: 10px 24px 10px 24px;
     overflow: hidden;
-    margin-left: 4px;
+    margin: 1px 1px 1px 4px;
     border-style: solid;
     border-width: 0.5px;
     border-color: var(--bordercolor);
@@ -328,7 +328,7 @@ html, body {
 @media screen and (max-width: 660px) {
 
   .content-container {
-    padding-top: 30vh;
+    padding-top: 27vh;
   }
 
   .img-container {
@@ -445,7 +445,7 @@ p {
     font-weight: 400;
     color: var(--textcolor);
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
   }
 
   .text-container {
